@@ -1,0 +1,53 @@
+{
+  "name": "speedy/timer",
+  "description": "A simple timer for measuring the speed of a script.",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Tomáš Kliner",
+      "email": "kliner.tomas@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.1.0"
+  },
+  "require-dev": {
+    "symfony/var-dumper": "^3.1",
+    "phpunit/phpunit": "^6.0.0"
+  },
+  "autoload": {
+    "files": [
+      "src/Resources/timer.php"
+    ],
+    "psr-4": {
+      "Speedy\\Timer\\": "src/"
+    },
+    "exclude-from-classmap": [
+      "/tests/"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Speedy\\": "tests/"
+    }
+  },
+  "minimum-stability": "stable",
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.1-dev"
+    }
+  },
+  "scripts": {
+    "build": [
+      "@composer install --no-progress --no-interaction",
+      "@test"
+    ],
+    "install-prod": [
+      "@composer install --no-dev",
+      "@composer dump-autoload --optimize"
+    ],
+    "test": [
+      "phpunit tests"
+    ]
+  }
+}
