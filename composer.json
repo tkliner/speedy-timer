@@ -2,6 +2,7 @@
   "name": "speedy/timer",
   "description": "A simple timer for measuring the speed of a script.",
   "type": "library",
+  "license": "MIT",
   "authors": [
     {
       "name": "Tomáš Kliner",
