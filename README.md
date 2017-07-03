@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/tkliner/speedy-timer.svg?branch=master)](https://travis-ci.org/tkliner/speedy-timer)
+
 # Speedy Timer
 
 Speedy Timer is a package component for script runtime measurement that may be used for debugging applications within 
