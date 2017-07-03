@@ -121,8 +121,6 @@ class Item implements ItemInterface
             return round($time * 1000, 0);
         }
 
-        echo "ZDE";
-
         return $time;
     }
 
